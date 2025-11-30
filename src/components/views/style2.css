@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+body {
+    place-items: center;
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+.form-parent {
+    position: absolute;
+    top: 10%;
+    background-color: transparent;
+    z-index: -1;
+    height: 100vh;
+}
+
+form {
+    height: 450px;
+    max-width: 350px;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.10);
+    flex-direction: column;
+    display: flex;
+    backdrop-filter: blur(30px);
+    opacity: 8.7;
+    color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px 4px rgba(0, 0, 0, 0.10);
+}
+
+input {
+    height: 45px;
+    width: 90%;
+    padding: 15px;
+    margin: 12px;
+    font: 25px serif;
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: 0;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+form a {
+    text-align: end;
+    color: rgba(245, 245, 245, 0.728);
+    text-decoration: none;
+    font: 16px arial;
+}
+
+form button {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 50%;
+    height: 50px;
+    padding: 8px;
+    border-radius: 30px;
+    font: 20px tahoma, arial;
+    color: rgba(255, 255, 255, 0.66);
+    border: none;
+    margin: 20px auto;
+}
+
+form::after {
+    content: '';
+    height: 90px;
+    width: 90px;
+    background-color: white;
+    top: -40px;
+    left: -70px;
+    z-index: -10;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 2px;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+form::before {
+    content: '';
+    height: 90px;
+    width: 90px;
+    background-color: white;
+    bottom: -40px;
+    right: -70px;
+    z-index: 1;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 2px;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+input::placeholder {
+    color: rgba(245, 245, 245, 0.715);
+}
+
+.form-paret {
+    position: absolute;
+    top: 100%;
+    background-color: transparent;
+    min-height: 100vh;
+    padding-top: 10px;
+}
+
+#fom {
+    height: 500px;
+    max-width: 340px;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(243, 114, 2, 0.518);
+    flex-direction: column;
+    display: flex;
+    backdrop-filter: blur(30px);
+    opacity: 8.7;
+    z-index: 1;
+    color: whitesmoke;
+    border-radius: 45px 30px 30px 50px;
+    box-shadow: 2px 3px 3px 4px rgba(0, 0, 0, 0.10);
+}
+
+#put {
+    height: 50px;
+    width: 90%;
+    padding: 15px;
+    margin: 12px;
+    font: 25px serif;
+    background-color: rgba(230, 186, 150, 0.975);
+    outline: 0;
+    border: none;
+    color: white;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 5s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+#but {
+    text-align: right;
+    align-content: end;
+    color: rgba(245, 245, 245, 0.728);
+    text-decoration: none;
+    font: 16px arial;
+}
+
+#ton {
+    background-color: rgb(172, 119, 4);
+    width: 50%;
+    height: 50px;
+    border-radius: 30px;
+    font: 20px tahoma, arial;
+    color: rgb(216, 189, 189);
+    border: none;
+    border-bottom-right-radius: 70px;
+    border-top-left-radius: 60px;
+    margin: 25px;
+}
+
+#put:focus::placeholder {
+    border-radius: 40px;
+    color: white;
+}
+
+#ton:hover {
+    border-radius: 10px;
+    color: rgba(243, 114, 2, 0.518);
+}

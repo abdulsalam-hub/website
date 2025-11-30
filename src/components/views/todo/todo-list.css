@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    place-items: center;
+    background-image: linear-gradient(45deg, rgba(241, 7, 241, 0.642), rgba(0, 0, 255, 0.664));
+    width: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #583a3acb;
+    margin: 10px;
+    font: 25px tahoma, arial, verdana 900;
+}
+
+.todo-parent {
+    width: 90vw;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 50px 10px;
+}
+
+.todo-parent h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.btn {
+    display: flex;
+    padding: 10px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn input {
+    width: 80%;
+    height: 40px;
+    padding: 5px 10px;
+    outline: 0;
+    border-radius: 5px;
+    border: none;
+    text-indent: 3px;
+    font-family: 'Lucida Sans Unicode', 'Trebuchet MS', Arial, sans-serif;
+    font-size: larger;
+}
+
+.btn input:focus {
+    box-shadow: 2px 0px 3px 2px rgba(0, 0, 255, 0.3);
+}
+
+.btn button {
+    padding: 12px 15px;
+    color: rgba(255, 255, 255, 0.758);
+    background-color: rgba(18, 38, 223, 0.733);
+    border-radius: 5px;
+    border: none;
+    font-weight: 800;
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+    font: 20px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-y: auto;
+    width: 400px;
+    max-height: 200px;
+    padding-left: 10px;
+    z-index: -1;
+}
+
+.del {
+    margin: 5px 0px 5px 9px;
+    padding: 5px;
+    color: blue;
+    font-weight: 800;
+    border-radius: 3px;
+    border: 1px solid gray;
+    align-self: flex-end;
+    justify-self: self-end;
+}
+
+marquee {
+    margin: 10px 0px;
+    color: red;
+}
